@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FE3.C2.L2 Calculator</title>
+  </head>
+  <body>
+    <section class="calculator-section">
+      <table class="display">
+        <tr>
+          <td colspan="3">
+            <input type="text" name="screen" id="result" class="screen" />
+          </td>
+          <td>
+            <button onclick="calculator.clearScreen()" class="clear">C</button>
+          </td>
+        </tr>
+      </table>
+      <table class="keys">
+        <tr>
+          <td>
+            <button class="btn" onclick="calculator.display('7')">7</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('8')">8</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('9')">9</button>
+          </td>
+          <td>
+            <button class="operator" onclick="calculator.display('/')">
+              /
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" onclick="calculator.display('4')">4</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('5')">5</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('6')">6</button>
+          </td>
+          <td>
+            <button class="operator" onclick="calculator.display('*')">
+              *
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" onclick="calculator.display('1')">1</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('2')">2</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('3')">3</button>
+          </td>
+          <td>
+            <button class="operator" onclick="calculator.display('-')">
+              -
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" onclick="calculator.display('0')">0</button>
+          </td>
+          <td>
+            <button class="btn" onclick="calculator.display('.')">.</button>
+          </td>
+          <td>
+            <button class="btn equal" onclick="calculator.solve()">=</button>
+          </td>
+          <td>
+            <button class="operator" onclick="calculator.display('+')">
+              +
+            </button>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
